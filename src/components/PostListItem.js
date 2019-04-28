@@ -6,11 +6,12 @@ export default class PostListItem extends Component {
   };
 
   render() {
-    const {id, title, body} = this.props;
+    const {id, title, body, date} = this.props;
     return (
       <div className="cardPost" id={id}>
-        <h1>{title}</h1>
+        <b>{title}</b>
         <p>{body}</p>
+        <span>Date post: {date.toLocaleDateString()}</span>
       </div>
     );
   }
