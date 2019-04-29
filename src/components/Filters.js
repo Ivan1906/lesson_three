@@ -8,7 +8,7 @@ export const Filters = ({onChange, onSelect}) => {
   let onSelectShort = () => onSelect(selectRef.current.value);
 
   return (
-    <React.Fragment>
+    <div className="center">
       <input
         type="text"
         placeholder="Search post by Name"
@@ -20,6 +20,6 @@ export const Filters = ({onChange, onSelect}) => {
         <option value="title">Short by title post</option>
         <option value="date">Short by date post</option >
       </select>
-    </React.Fragment>
+    </div>
   );
 };
